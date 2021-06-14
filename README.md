@@ -38,7 +38,7 @@ Goku in the Cloud is a game inspired by the famous Japanese cartoon dragon ball,
 
 # Task
     
- <li>main - buildDom
+  <li>main - buildDom
   <li>main - buildSplashScreen
   <li>main - addEventListener
   <li>main - buildGameScreen
