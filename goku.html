@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goku in the Cloud</title>
+    <link rel="stylesheet" href="../Goku_Game/goku.css">
+</head>
+
+<body>
+    <!--Splash Screen-->
+
+   <section id="start-page">
+       <div id="box-title">
+          <img src="..//Goku_Game/Images/Splash-screen.png" id="logo" alt="templo Kamisama"> 
+          <audio src=""></audio>
+          <h1>Welcome to Goku in the Cloud</h1>    
+       </div>
+       <div id="box-instrction">
+            <h2>Find all the Dragon Balls and make your wish to Sheng Long.</h2>
+            <h2>Good Luck!!</h2>
+         <p id="instruccions" >You can fly by moving with the up and down arrows on your keyboard <br> Dodge the enemies moving with the arrow up or down. 
+            <br>
+            Catch all 7 balls and win.</p>
+         <div id="input-container">
+            <button id="start-btn" class="button">Get on the cloud and fly</button>
+       </div>
+      </div>
+    
+ </section>
+       <!--Game Screen-->
+   <section id="game-page">
+         <div id="game-container">
+              <canvas id="myCanvas" width="1890" height="840"></canvas>
+         </div>
+   </section>
+         
+          <!--Game Over Screen-->
+
+    <section id="game-over-page">
+        <div id="final-top">
+            <h1>the game is over.
+            </h1>
+
+            <img src="..//Goku_Game/Images/goku kid.jpg" id="goku-kid" alt="Cell">
+        </div>
+        <div id="final-bottom">
+            <button id="restart-btn">Do You Want To Try Again?</button>
+        </div>
+ </section>    
+ <section id="win-game-page">
+     <div id="win-top">
+      <h1>You are a KHAME IRONHACK</h1>
+      <h2>Keep flying away</h2>
+     </div>
+     <div id="last-image">
+         <img src=".//Images/win-page.png" alt="">
+     </div>
+ </section>      
+       <script src="../Goku_Game/goku-game.js"></script>
+      <script src="../Goku_Game/goku-main.js"></script>
+</body> 
+</html>
