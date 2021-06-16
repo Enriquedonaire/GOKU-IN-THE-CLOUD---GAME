@@ -88,8 +88,8 @@ p{  display: flex;
     color: green;
 }
 #Score-Canvas{
-    width: 500px;
-    height: 350px;
+    width: 700px;
+    height: 550px;
     background-color: green;
     background-position:right;
 }
@@ -104,7 +104,7 @@ p{  display: flex;
 #restart-btn{
     display: flex;
     justify-content: center;
-     color:green;
+     color:orange;
     text-transform: uppercase;
     background: rgb(0, 54, 172);
     padding: 25px;
@@ -112,7 +112,7 @@ p{  display: flex;
     justify-content: center;
     border:darkgoldenrod;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 50px;
     font-family: 'Saiyan-Sans';
 }
