@@ -240,7 +240,7 @@ function draw(){
         } else if (isGameWin){
             startAudio.pause()
             audioWiningPage.play()
-            audioWiningPage.volume = 0.7
+            audioWiningPage.volume = 0.3
             audioGokuWin.play()
             cancelAnimationFrame(intervalId)
             gameWinningPage.style.display = 'block'
