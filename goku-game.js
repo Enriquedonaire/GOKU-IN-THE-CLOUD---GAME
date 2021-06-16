@@ -9,46 +9,46 @@ let canvas = document.getElementById('myCanvas');
 let ctx = canvas.getContext('2d');
 canvas.style.border = '2px solid black';
 let bg = new Image;
-bg.src = '/Images/background1.png';
-let audioMainPage = new Audio('/Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3');
-let audiogameOverPage = new Audio ('/Music/Dragon ball Super  Ultra Instinct 8bit Cover.mp3');
-let startAudio = new Audio('/Music/Dragon Ball Z Opening 8 bit.mp3');
-let audioWiningPage = new Audio('/Music/Dragon ball z cancion.mp3');
-let audioGokuWin = new Audio('/Music/goku-kamehameha-tonos.mp3');
+bg.src = 'Images/background1.png';
+let audioMainPage = new Audio('Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3');
+let audiogameOverPage = new Audio ('Music/Dragon ball Super  Ultra Instinct 8bit Cover.mp3');
+let startAudio = new Audio('Music/Dragon Ball Z Opening 8 bit.mp3');
+let audioWiningPage = new Audio('Music/Dragon ball z cancion.mp3');
+let audioGokuWin = new Audio('Music/goku-kamehameha-tonos.mp3');
 let goku = new Image;
-goku.src = '/Images/goku-Ready.png';
+goku.src = 'Images/goku-Ready.png';
 let fg = new Image;
-fg.src = '/Images/mountainSouth.png';
+fg.src = 'Images/mountainSouth.png';
 let mountainNorth = new Image;
-mountainNorth.src = '/Images/mountainNorth.png';
+mountainNorth.src = 'Images/mountainNorth.png';
 let cloud1 = new Image;
-cloud1.src ='/Images/cloud1.png';
+cloud1.src ='Images/cloud1.png';
 let cloud2 = new Image;
-cloud2.src = '/Images/cloud2.png';
+cloud2.src = 'Images/cloud2.png';
 let enemy1 = new Image;
-enemy1.src ='/Images/enemy1.png';
+enemy1.src ='Images/enemy1.png';
 let enemy2 = new Image;
-enemy2.src ='/Images/enemy 2.png';
+enemy2.src ='Images/enemy 2.png';
 let enemy3 = new Image;
-enemy3.src= '/Images/enemy3.png';
+enemy3.src= 'Images/enemy3.png';
 let mountains = [{x: 1890,  y: 570},                             
 ];
 let fgs = [{x: 400, y: canvas.height - 120 }
 ]
 let sphere1 = new Image
-sphere1.src = '/Images/Sphere1.png'
+sphere1.src = 'Images/Sphere1.png'
 let sphere2 = new Image
-sphere2.src ='/Images/Sphere2.png'
+sphere2.src ='Images/Sphere2.png'
 let sphere3 = new Image
-sphere3.src = '/Images/Sphere3.png'
+sphere3.src = 'Images/Sphere3.png'
 let sphere4 = new Image
-sphere4.src = '/Images/Sphere4.png'
+sphere4.src = 'Images/Sphere4.png'
 let sphere5 = new Image
-sphere5.src = '/Images/Sphere5.png'
+sphere5.src = 'Images/Sphere5.png'
 let sphere6 = new Image
-sphere6.src = '/Images/Sphere6.png'
+sphere6.src = 'Images/Sphere6.png'
 let sphere7 = new Image
-sphere7.src = '/Images/Sphere7.png'
+sphere7.src = 'Images/Sphere7.png'
 let gokuX = 400, gokuY = 250
 let incrX = 0, incrY = - 2
 let isUp = false, isDown = false, isRight = false, isLeft = false;
@@ -219,11 +219,11 @@ function draw(){
 
       
         ctx.fillStyle = 'orange'
-        ctx.font = '75px /Fonts/Saiyan-Sans'
+        ctx.font = '75px Fonts/Saiyan-Sans'
         ctx.fillText(`Score: ${score}`, 550, 85)
       
         ctx.fillStyle = 'blue'
-        ctx.font = '73px /Fonts/Saiyan-Sans'
+        ctx.font = '73px Fonts/Saiyan-Sans'
         ctx.fillText(`Enemy: ${EnemiesCollision}`, 850, 85)
      
 
