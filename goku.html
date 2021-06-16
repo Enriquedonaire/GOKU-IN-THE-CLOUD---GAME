@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goku in the Cloud</title>
     <link rel="stylesheet" href="../Goku_Game/goku.css">
+    
 </head>
 
 <body>
@@ -14,17 +15,22 @@
    <section id="start-page">
        <div id="box-title">
           <img src="..//Goku_Game/Images/Splash-screen.png" id="logo" alt="templo Kamisama"> 
-          <audio src=""></audio>
+          <audio src="../Goku_Game/Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3"></audio>
           <h1>Welcome to Goku in the Cloud</h1>    
        </div>
-       <div id="box-instrction">
-            <h2>Find all the Dragon Balls and make your wish to Sheng Long.</h2>
-            <h2>Good Luck!!</h2>
-         <p id="instruccions" >You can fly by moving with the up and down arrows on your keyboard <br> Dodge the enemies moving with the arrow up or down. 
-            <br>
-            Catch all 7 balls and win.</p>
-         <div id="input-container">
-            <button id="start-btn" class="button">Get on the cloud and fly</button>
+       <div id="box-instrction"><span>
+        <h2>Find all the Dragon Balls and make your wish to Sheng Long.</h2>
+        <h2>Good Luck!!</h2>
+     <p id="instruccions" >You can fly by moving with the up and down arrows on your keyboard <br> Dodge enemies by moving around. 
+        <br>
+        Catch all 7 balls and win.</p>
+       </span>
+       <br>
+      <div id="input-container">
+        <button id="start-btn" class="button" style="background-image: url('..//Goku_Game/Images/NubeVoladora.png')">
+            Get on Board</button>
+            
+            
        </div>
       </div>
     
@@ -34,6 +40,7 @@
          <div id="game-container">
               <canvas id="myCanvas" width="1890" height="840"></canvas>
          </div>
+         <div id="socre-container"><span> <canvas id="Score-Canvas" width="500" height="350"></canvas></span></div>
    </section>
          
           <!--Game Over Screen-->
@@ -46,16 +53,20 @@
             <img src="..//Goku_Game/Images/goku kid.jpg" id="goku-kid" alt="Cell">
         </div>
         <div id="final-bottom">
-            <button id="restart-btn">Do You Want To Try Again?</button>
+            <button id="restart-btn"><img src="../Goku_Game/Images/goku-nube.gif" alt="">Do You Want To Try Again?</button>
         </div>
  </section>    
  <section id="win-game-page">
      <div id="win-top">
       <h1>You are a KHAME IRONHACK</h1>
       <h2>Keep flying away</h2>
-     </div>
-     <div id="last-image">
-         <img src=".//Images/win-page.png" alt="">
+      <div id="last-image">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/868488441782583137/C74543790B046EE9556071E5B466CD9C774B4754/" alt=""><img src="https://i.pinimg.com/originals/ac/48/22/ac4822aefaec274c6c5dc99b54034596.gif" alt="">
+          <img src="https://49.media.tumblr.com/fb544fa969f0e1a6334c1860b8d1cdc6/tumblr_o4mrz1XDy11tysnbmo1_500.gif" alt="">  
+          <div id="input-container">
+            <div><button id="start-btn" class="button" style="background-image: url('..//Goku_Game/Images/NubeVoladora.png')">
+                Fly Again</button></div>
+       </div>
      </div>
  </section>      
        <script src="../Goku_Game/goku-game.js"></script>

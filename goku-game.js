@@ -12,7 +12,8 @@ bg.src = '../Goku_Game/Images/background1.png';
 let audioMainPage = new Audio('..//Goku_Game/Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3')
 let audiogameOverPage = new Audio ('../Goku_Game/Music/Dragon ball Super  Ultra Instinct 8bit Cover.mp3')
 let startAudio = new Audio('..//Goku_Game/Music/Dragon Ball Z Opening 8 bit.mp3')
-
+let audioWiningPage = new Audio('..//Goku_Game/Music/Dragon ball z cancion.mp3')
+let audioGokuWin = new Audio('..//Goku_Game/Music/goku-kamehameha-tonos.mp3')
 let goku = new Image;
 goku.src = '..//Goku_Game/Images/goku-Ready.png'
 let fg = new Image;
@@ -218,14 +219,14 @@ function draw(){
 
         }
 
-
+      
         ctx.fillStyle = 'black'
         ctx.font = '35px Verdana'
         ctx.fillText(`Score: ${score}`, 30, 30)
       
         ctx.fillStyle = 'black'
         ctx.font = '35px Verdana'
-        ctx.fillText(`Enemy: ${EnemiesCollision}`, 1700, 30)
+        ctx.fillText(`Enemy: ${EnemiesCollision}`, 30, 60)
      
 
         if (isGameOver){
@@ -239,11 +240,16 @@ function draw(){
             restartBtn
 
         } else if (isGameWin){
+            startAudio.pause()
+            audioWiningPage.play()
+            audioWiningPage.volume = 0.7
+            audioGokuWin.play()
             cancelAnimationFrame(intervalId)
             gameWinningPage.style.display = 'block'
             startPage.style.display = 'none'
             gamePage.style.display = 'none'
             gameOverPage.style.display= 'none'
+            restartBtn
             
         } else{
             intervalId = requestAnimationFrame(draw)
@@ -278,6 +284,7 @@ function start(){
     draw()
     
 }
+
 
 
 
