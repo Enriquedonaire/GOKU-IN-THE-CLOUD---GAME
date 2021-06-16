@@ -1,38 +1,36 @@
-let startBtn = document.querySelector('#start-btn')
-let restartBtn = document.querySelector('#restart-btn')
-let startPage = document.querySelector('#start-page')
-let gamePage = document.querySelector('#game-page')
-let gameOverPage = document.querySelector('#game-over-page')
-let gameWinningPage = document.querySelector('#win-game-page')
+let winBtn = document.getElementById('#win-btn');
+let startBtn = document.querySelector('#start-btn');
+let restartBtn = document.querySelector('#restart-btn');
+let startPage = document.querySelector('#start-page');
+let gamePage = document.querySelector('#game-page');
+let gameOverPage = document.querySelector('#game-over-page');
+let gameWinningPage = document.querySelector('#win-game-page');
 let canvas = document.getElementById('myCanvas');
 let ctx = canvas.getContext('2d');
 canvas.style.border = '2px solid black';
 let bg = new Image;
 bg.src = '../Goku_Game/Images/background1.png';
-let audioMainPage = new Audio('..//Goku_Game/Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3')
-let audiogameOverPage = new Audio ('../Goku_Game/Music/Dragon ball Super  Ultra Instinct 8bit Cover.mp3')
-let startAudio = new Audio('..//Goku_Game/Music/Dragon Ball Z Opening 8 bit.mp3')
-let audioWiningPage = new Audio('..//Goku_Game/Music/Dragon ball z cancion.mp3')
-let audioGokuWin = new Audio('..//Goku_Game/Music/goku-kamehameha-tonos.mp3')
+let audioMainPage = new Audio('..//Goku_Game/Music/Dragon Ball 8 Bits Mystical Adventure Opening.mp3');
+let audiogameOverPage = new Audio ('../Goku_Game/Music/Dragon ball Super  Ultra Instinct 8bit Cover.mp3');
+let startAudio = new Audio('..//Goku_Game/Music/Dragon Ball Z Opening 8 bit.mp3');
+let audioWiningPage = new Audio('..//Goku_Game/Music/Dragon ball z cancion.mp3');
+let audioGokuWin = new Audio('..//Goku_Game/Music/goku-kamehameha-tonos.mp3');
 let goku = new Image;
-goku.src = '..//Goku_Game/Images/goku-Ready.png'
+goku.src = '..//Goku_Game/Images/goku-Ready.png';
 let fg = new Image;
-fg.src = '../Goku_Game/Images/mountainSouth.png'
-let mountainNorth = new Image
-mountainNorth.src = '../Goku_Game/Images/mountainNorth.png'
+fg.src = '../Goku_Game/Images/mountainSouth.png';
+let mountainNorth = new Image;
+mountainNorth.src = '../Goku_Game/Images/mountainNorth.png';
 let cloud1 = new Image;
-cloud1.src ='..//Goku_Game/Images/cloud1.png'
+cloud1.src ='..//Goku_Game/Images/cloud1.png';
 let cloud2 = new Image;
-cloud2.src = '..//Goku_Game/Images/cloud2.png'
-let enemy1 = new Image
-enemy1.src ='..//Goku_Game/Images/enemy1.png'
-let enemy2 = new Image
-enemy2.src ='..//Goku_Game/Images/enemy 2.png'
-let enemy3 = new Image
-enemy3.src= '..//Goku_Game/Images/enemy3.png'
-let intervalId = 0
-let isGameOver = false;
-
+cloud2.src = '..//Goku_Game/Images/cloud2.png';
+let enemy1 = new Image;
+enemy1.src ='..//Goku_Game/Images/enemy1.png';
+let enemy2 = new Image;
+enemy2.src ='..//Goku_Game/Images/enemy 2.png';
+let enemy3 = new Image;
+enemy3.src= '..//Goku_Game/Images/enemy3.png';
 let mountains = [{x: 1890,  y: 570},                             
 ];
 let fgs = [{x: 400, y: canvas.height - 120 }
@@ -72,8 +70,8 @@ let enemies = [{x: 3500, y:95},
                
 ]
 
-let mode;
-
+let intervalId = 0
+let isGameOver = false;
 let score = 0;
 let EnemiesCollision = 0;
 let isGameWin = false
@@ -92,7 +90,7 @@ function draw(){
              ctx.drawImage( enemy1, enemies[i].x, enemies[i].y)
              ctx.drawImage( enemy2, enemies[i].x, enemies[i].y)
              
-             enemies[i].x -= 7
+             enemies[i].x -= 9
                
              if(enemies[i].x + enemy1.width < 0){
              enemies[i] = {
@@ -107,7 +105,7 @@ function draw(){
      for (let i = 0; i < mountains.length; i++ ){
       
         ctx.drawImage( mountainNorth, mountains[i].x, mountains[i].y)
-        mountains[i].x -= 5
+        mountains[i].x -= 6
 
         if(mountains[i].x + mountainNorth.width < 0){
             mountains[i] = {
@@ -155,7 +153,7 @@ function draw(){
         ctx.drawImage(cloud2, clouds[c].x, clouds[c].y)
 
         if (cloud2.width || cloud1.width < 0){
-            clouds[c].x -= 6
+            clouds[c].x -= 7
 
             if (clouds[c].x + cloud1.width < 0){
                 clouds[c] = {
@@ -220,13 +218,13 @@ function draw(){
         }
 
       
-        ctx.fillStyle = 'black'
-        ctx.font = '35px Saiyan-Sans'
-        ctx.fillText(`Score: ${score}`, 30, 30)
+        ctx.fillStyle = 'orange'
+        ctx.font = '75px Saiyan-Sans'
+        ctx.fillText(`Score: ${score}`, 550, 85)
       
-        ctx.fillStyle = 'black'
-        ctx.font = '35px Saiyan-Sans'
-        ctx.fillText(`Enemy: ${EnemiesCollision}`, 30, 60)
+        ctx.fillStyle = 'blue'
+        ctx.font = '73px Saiyan-Sans'
+        ctx.fillText(`Enemy: ${EnemiesCollision}`, 850, 85)
      
 
         if (isGameOver){

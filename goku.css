@@ -49,7 +49,9 @@ h1{ margin-top: -20px;
 
 h1{
     color: yellow;
-    font-size: 100px;
+    font-size: 150px;
+    justify-content: center;
+    align-items: baseline;
     text-align: center;
     
 }
@@ -84,19 +86,8 @@ p{  display: flex;
     background-attachment: fixed;
 }
 
-#socre-container{
-    color: green;
-}
-#Score-Canvas{
-    width: 700px;
-    height: 550px;
-    background-color: green;
-    background-position:right;
-}
-
-
 #goku-kid{
-    display: block;
+    display: 'none';
     justify-content: center;
     bottom: auto;
 }
@@ -147,10 +138,8 @@ p{  display: flex;
     border-radius: 50px;
     font-size: 20px;
     margin-top: 30px;
-    font-family: '../Goku_Game/Fonts/Saiyan-Sans';
+    font-family: 'Saiyan-Sans';
 }
-
-
 
 
 
