@@ -219,12 +219,12 @@ function draw(){
 
       
         ctx.fillStyle = 'orange'
-        ctx.font = '73px verdana'
-        ctx.fillText(`Score: ${score}`, 250, 85)
+        ctx.font = '75px Verdana'
+        ctx.fillText(`Score: ${score}`, 350, 85)
       
         ctx.fillStyle = 'blue'
         ctx.font = '73px Verdana'
-        ctx.fillText(`Enemy: ${EnemiesCollision}`, 875, 85)
+        ctx.fillText(`Enemy: ${EnemiesCollision}`, 900, 85)
      
 
         if (isGameOver){
