@@ -49,6 +49,7 @@ let sphere6 = new Image
 sphere6.src = 'Images/Sphere6.png'
 let sphere7 = new Image
 sphere7.src = 'Images/Sphere7.png'
+let myFonts = new font('Fonts/Saiyan-Sans')
 let gokuX = 400, gokuY = 250
 let incrX = 0, incrY = - 2
 let isUp = false, isDown = false, isRight = false, isLeft = false;
@@ -219,11 +220,11 @@ function draw(){
 
       
         ctx.fillStyle = 'orange'
-        ctx.font = '75px Fonts/Saiyan-Sans'
+        ctx.font = '75px Fonts/Saiyan-Sans.ttf'
         ctx.fillText(`Score: ${score}`, 550, 85)
       
         ctx.fillStyle = 'blue'
-        ctx.font = '73px Fonts/Saiyan-Sans'
+        ctx.font = '73px Fonts/Saiyan-Sans.ttf'
         ctx.fillText(`Enemy: ${EnemiesCollision}`, 850, 85)
      
 
