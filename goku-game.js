@@ -219,11 +219,11 @@ function draw(){
 
       
         ctx.fillStyle = 'orange'
-        ctx.font = '75px verdana'
-        ctx.fillText(`Score: ${score}`, 500, 85)
+        ctx.font = 'Saiyan-Sans 73px'
+        ctx.fillText(`Score: ${score}`, 250, 85)
       
         ctx.fillStyle = 'blue'
-        ctx.font = '73px Verdana'
+        ctx.font = 'Saiyan-Sans 73px'
         ctx.fillText(`Enemy: ${EnemiesCollision}`, 875, 85)
      
 
