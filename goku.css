@@ -7,7 +7,7 @@
 body{
     background-color: #000000;
     color:  rgb(245, 237, 222) ;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'fantasy', Arial, Helvetica, sans-serif;
 
 }
 
@@ -27,7 +27,7 @@ h1{ margin-top: -20px;
     background-color: transparent;
     border-image-source:url('Images/NubeVoladora.png');
     padding: 75px;
-    padding-right: 186px;
+    padding-right: 185px;
     padding-bottom: 65px;
     justify-content: center;
     font-size: 20px;
@@ -90,7 +90,6 @@ p{  display: flex;
     display: 'none';
     justify-content: center;
     bottom: auto;
-    font-family: 'Fonts/Saiyan-Sans';
 }
 
 #restart-btn{
@@ -122,9 +121,10 @@ p{  display: flex;
     border-radius: 50px;
     font-size: 400px;
     margin-top: 30px;
-    font-family: 'Fonts/Saiyan-Sans'
-}
+    font-family: 'Fonts/Saiyan-Sans';
 
+
+}
 #restart{
     display: flex;
     justify-content: center;
