@@ -1,7 +1,7 @@
 #  ☁️ Goku in the Cloud ☁️
 🐉  https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME ☁️
   
- #  Technologies ⚙️ :
+ # ⚙️ Technologies :
  <li>HTML5
  <li>CSS3
  <li>BEM
