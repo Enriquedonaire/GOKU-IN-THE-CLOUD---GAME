@@ -8,7 +8,7 @@ https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME 🐉
  <li>JavaScript
  </br>
  
-# Description:
+# ☁️ Description:
 Goku in the Cloud is a game inspired by the famous Japanese cartoon dragon ball, where the player must fly horizontally across the stage looking for the seven spheres of the Dragon, for this he must dodge enemies and other objects without being touched by anything. this way the player will get points every time he dodges something and five points if he finds a sphere. The game ends when goku finds the seven spheres or when he is touched by a Enemies.
 
 
