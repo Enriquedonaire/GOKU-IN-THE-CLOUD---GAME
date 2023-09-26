@@ -1,4 +1,4 @@
-# 🐉  Goku in the Cloud ☁️ 
+# 🐉  Goku in the Cloud 🐉
  ☁️ https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME  🐉
   
  # ⚙️ Technologies :
